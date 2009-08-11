@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20090811204047) do
+ActiveRecord::Schema.define(:version => 20090811204314) do
 
   create_table "answers", :force => true do |t|
     t.integer  "user_id"
@@ -74,5 +74,18 @@ ActiveRecord::Schema.define(:version => 20090811204047) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  create_table "votes", :force => true do |t|
+    t.boolean  "vote",          :default => false
+    t.integer  "voteable_id",                      :null => false
+    t.string   "voteable_type",                    :null => false
+    t.integer  "voter_id"
+    t.string   "voter_type"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "votes", ["voteable_id", "voteable_type"], :name => "fk_voteables"
+  add_index "votes", ["voter_id", "voter_type"], :name => "fk_voters"
 
 end

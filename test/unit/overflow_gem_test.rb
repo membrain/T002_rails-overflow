@@ -20,4 +20,10 @@ class OverflowGemTest < ActiveSupport::TestCase
     g2 = OverflowGem.new({:name => "gem_that_has_one space"})
     assert !g2.save
   end
+  
+  def test_overflow_gem_is_commentable
+    g = OverflowGem.new({:name => "valid_overflow_gem_name"})
+    assert g.save
+    assert g.comments.create(:title => "A tasteful commentary", :comment => "Wow, this gem sure is shitty.")
+  end
 end

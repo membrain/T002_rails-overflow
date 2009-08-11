@@ -3,11 +3,11 @@
 one:
   overflow_gem: 
   user: 
-  name: MyString
-  value: MyString
+  name: url
+  value: http://www.membrain.ws/
 
 two:
   overflow_gem: 
   user: 
-  name: MyString
-  value: MyString
+  name: url
+  value: http://www.funny.com/url/here.html

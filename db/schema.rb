@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20090811204314) do
+ActiveRecord::Schema.define(:version => 20090811211427) do
 
   create_table "answers", :force => true do |t|
     t.integer  "user_id"
@@ -35,7 +35,7 @@ ActiveRecord::Schema.define(:version => 20090811204314) do
   add_index "comments", ["user_id"], :name => "index_comments_on_user_id"
 
   create_table "gem_attributes", :force => true do |t|
-    t.integer  "gem_id"
+    t.integer  "overflow_gem_id"
     t.integer  "user_id"
     t.string   "name"
     t.string   "value"
@@ -43,7 +43,7 @@ ActiveRecord::Schema.define(:version => 20090811204314) do
     t.datetime "updated_at"
   end
 
-  create_table "gems", :force => true do |t|
+  create_table "overflow_gems", :force => true do |t|
     t.integer  "user_id"
     t.string   "name"
     t.datetime "created_at"

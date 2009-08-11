@@ -1,13 +1,13 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
 one:
-  gem: 
+  overflow_gem: 
   user: 
   name: MyString
   value: MyString
 
 two:
-  gem: 
+  overflow_gem: 
   user: 
   name: MyString
   value: MyString

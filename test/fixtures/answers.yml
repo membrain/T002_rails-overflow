@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  user: 
+  question: 
+  gem: 
+  body: MyString
+
+two:
+  user: 
+  question: 
+  gem: 
+  body: MyString

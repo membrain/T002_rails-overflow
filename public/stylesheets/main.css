@@ -1,13 +1,18 @@
 #header {
+	width: 80%;
+	margin: 0 auto;
 	background: #ccc;
 }
 
 #main-content {
+	min-height: 500px;
 	width: 80%;
-	background: #ddd;
 	margin: 0 auto;
+	background: #ddd;
 }
 
 #footer {
+	width: 80%;
+	margin: 0 auto;
 	background: #ccc;
 }

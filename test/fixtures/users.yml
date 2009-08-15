@@ -1,7 +1,14 @@
-# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
-
-# one:
-#   column: value
-#
-# two:
-#   column: value
+scott:
+  last_request_at: <%=Time.now %>
+  updated_at: <%=Time.now %>
+  crypted_password: ecd58ac26b0597751a4492c5eb5c15eea7ce149391d26eeb0245a5d545c951748f206667907875e818456db02ca2763a7f969337f4b9e53cc490fb589d08f67a
+  perishable_token: aZIGeRAF21aPJqbFCagH
+  current_login_ip: 127.0.0.1
+  password_salt: wwz5OXrjNyqSeg17ktiU
+  current_login_at: <%=Time.now %>
+  failed_login_count: 0
+  persistence_token: 549bdc0859c0cf33393dbbde2b03b541e7a8167a25619ed36e27bb5fd3a8a999fd51646ff244bb6685fa8a0e55e735937a374411b9215eef151596d346dc4992
+  login_count: 1
+  login: scott
+  last_login_ip: 
+  created_at: <%=Time.now %>

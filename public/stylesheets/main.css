@@ -1,0 +1,13 @@
+#header {
+	background: #ccc;
+}
+
+#main-content {
+	width: 80%;
+	background: #ddd;
+	margin: 0 auto;
+}
+
+#footer {
+	background: #ccc;
+}

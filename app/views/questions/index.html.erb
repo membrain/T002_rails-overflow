@@ -1,3 +1,9 @@
+<div id="questions">
 <% Question.all.each do |q| %>
-  <%=  %>
+  <div class="question">
+    <div class="q_title"><%= link_to q.title, question_path(q) %></div>
+    <div class="q_user">Submitted by: <%= q.user.login %></div>
+    <div class="q_body"><%= q.body %></div>
+  </div>
 <% end %>
+</div>

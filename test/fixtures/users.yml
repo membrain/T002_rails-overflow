@@ -1,7 +1,7 @@
 scott:
   last_request_at: <%=Time.now %>
   updated_at: <%=Time.now %>
-  crypted_password: ecd58ac26b0597751a4492c5eb5c15eea7ce149391d26eeb0245a5d545c951748f206667907875e818456db02ca2763a7f969337f4b9e53cc490fb589d08f67a
+  crypted_password: ecd58ac26b0597751a4492c5eb5c15eea7ce149391d26eeb0245a5d545c951748f206667907875e818456db02ca2763a7f969337f4b9e53cc490fb589d08f67a # 'testing'
   perishable_token: aZIGeRAF21aPJqbFCagH
   current_login_ip: 127.0.0.1
   password_salt: wwz5OXrjNyqSeg17ktiU

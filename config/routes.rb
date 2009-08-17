@@ -5,7 +5,8 @@ ActionController::Routing::Routes.draw do |map|
 
   # config/routes.rb
   map.resource :account, :controller => "users"
-  map.resources :users
+  map.resources :gems
+  map.resources :questions
 
   map.connect ':controller/:action/:id'
   map.connect ':controller/:action/:id.:format'

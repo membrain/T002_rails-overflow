@@ -11,6 +11,7 @@
 <body>
 
 <div id="header">
+  <%= link_to "Home", root_path %> |
 <% if !current_user %>
   <%= link_to "Register", new_account_path %> |
   <%= link_to "Log In", new_user_session_path %> |

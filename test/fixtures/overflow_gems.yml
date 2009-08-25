@@ -2,8 +2,4 @@
 
 one:
   user: 
-  name: MyString
-
-two:
-  user: 
-  name: MyString
+  name: a_test_gem

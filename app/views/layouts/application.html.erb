@@ -10,25 +10,27 @@
 </head>
 <body>
 
-<div id="header">
-  <%= link_to "Home", root_path %> |
-<% if !current_user %>
-  <%= link_to "Register", new_account_path %> |
-  <%= link_to "Log In", new_user_session_path %> |
-<% else %>
-  <%= link_to "My Account", account_path %> |
-  <%= link_to "Logout", user_session_path, :method => :delete, :confirm => "Are you sure you want to logout?" %>
-<% end %>
-</div>
+<div id="content">
+  <div id="header">
+    <%= link_to "Home", root_path %> |
+  <% if !current_user %>
+    <%= link_to "Register", new_account_path %> |
+    <%= link_to "Log In", new_user_session_path %> |
+  <% else %>
+    <%= link_to "My Account", account_path %> |
+    <%= link_to "Logout", user_session_path, :method => :delete, :confirm => "Are you sure you want to logout?" %>
+  <% end %>
+  </div>
  
-<%= flash[:notice] %>
+  <%= flash[:notice] %>
 
-<div id="main-content">
-<%= yield %>
-</div>
+  <div id="main-content">
+  <%= yield %>
+  </div>
  
-<div id="footer">
-  All software herein licensed under whatever license Rick finds for us.
+  <div id="footer">
+    All software herein licensed under whatever license Rick finds for us.
+  </div>
 </div>
 
 </body>
